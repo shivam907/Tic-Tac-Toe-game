@@ -8,13 +8,14 @@ def replacer(s, n, i):
 a='''___|___|___
 ___|___|___
    |   |   '''
+n=a
 
-b='''_1_|_2_|_3_
+n1='''_1_|_2_|_3_
 _4_|_5_|_6_
  7 | 8 | 9 '''
 
 print("Enter Position Where You want to Put your Move  \n{} ".format(a))
-print("Positions are defined as \n{}".format(b))
+print("Positions are defined as \n{}".format(n1))
 
 
 pos=[1,5,9,13,17,21,25,29,33]
@@ -105,4 +106,10 @@ while b==True:
         elif s[9]==s[17]==s[25]=="O":
             print("O is the Winner")
             b=False
+        if b==False:
+            a=input("Do You Want to Play again (y/n)  ")
+            if a=="y":
+                print("Enter Position Where You want to Put your Move  \n{} ".format(n))
+                print("Positions are defined as \n{}".format(n1))
+                b=True
             
