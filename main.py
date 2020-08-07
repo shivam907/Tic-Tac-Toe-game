@@ -109,7 +109,7 @@ while b==True:
         if b==False:
             a=input("Do You Want to Play again (y/n)  ")
             if a=="y":
-                print("Enter Position Where You want to Put your Move  \n{} ".format(n))
+                print("Enter Position Where You want to Put your turn  \n{} ".format(n))
                 print("Positions are defined as \n{}".format(n1))
                 b=True
             
