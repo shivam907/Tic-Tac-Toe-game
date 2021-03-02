@@ -27,7 +27,7 @@ def input_(s, c):
     ba = input()
     
     if ba.isdigit():
-        b=int(b)
+        b=int(ba)
         l.append(b)
         if l.count(b)>=2:
             print("Sorry This Place is Already Occupied Try Another ")
@@ -112,9 +112,4 @@ while b==True:
         elif s[9]==s[17]==s[25]=="O":
             print("O is the Winner")
             b=False
-        if b==False:
-            a=input("Do You Want to Play again (y/n)  ")
-            if a=="y":
-                print("Enter Position Where You want to Put your Move  \n{} ".format(n))
-                print("Positions are defined as \n{}".format(n1))
-                b=True
+        
