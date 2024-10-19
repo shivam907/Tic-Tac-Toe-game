@@ -137,8 +137,6 @@ while b:                                                                        
                 print("O is the Winner")
                 b=False
                 break
-
-
             if s[1]==s[21]==s[41]==s[61]=="X":
                 print("X is the Winner")
                 b=False
