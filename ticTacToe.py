@@ -1,7 +1,6 @@
 from operator import indexOf
 
-
-def replacer(s, n, i):                                                                                             #it fits the value given by user of X/0 in to the structure of TicTacToe
+def replacer(s, n, i):     #it fits the value given by user of X/0 in to the structure of TicTacToe
     if i < 0:
         return n + s
     if i > len(s):
@@ -11,7 +10,7 @@ def replacer(s, n, i):                                                          
             return s[:i] + n + s[i+ 1:]
         return s[:i+1] + n + s[i+ 2:]
 
-def input_positions(s, c):                                                                                         #it takes Input from users of the positions where they want to move there turn and checks that is't that space occupied and 
+def input_positions(s, c):         #it takes Input from users of the positions where they want to move there turn and checks that is't that space occupied 
     print("Enter the Position where you want to Move {} ".format(s))
     ba = input()
     if ba.isdigit():
@@ -27,7 +26,6 @@ def input_positions(s, c):                                                      
         print("You have Not Entered a Digit Please Enter Again ")
         return 0
 
-
 a='''___|___|___|___
 ___|___|___|___
 ___|___|___|___
@@ -39,11 +37,8 @@ _5_|_6_|_7_|_8_
 _9_|10_|11_|12_
 13 |14 |15 |16 '''
 
-
-
 print("Enter Position Where You want to Put your Move  \n{} ".format(a))
 print("Positions are defined as \n{}".format(n1))
-
 print()
 print()
 print(n1[37])
@@ -54,8 +49,7 @@ l=[]
 i=1
 b=True
 
-
-while b:                                                                        #while loop calls the input function and prints the current position of the TicTacToe Structure  and also check for a winner simultaneously if someone has won then the loop breaks
+while b:     #while loop calls the input function and prints the current position of the TicTacToe Structure  and also check for a winner simultaneously if someone has won then the loop breaks
     if b:
         if i%2!=0 and b :
             s=input_positions("X", a)
